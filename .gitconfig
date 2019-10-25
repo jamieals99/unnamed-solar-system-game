@@ -1,0 +1,22 @@
+[user]
+	name = ThirtySomething
+	email = <my email address here>
+[core]
+	autocrlf = true
+	safecrlf = true
+	autorrlf = true
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = <path to program>
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	path = <path to program>
+[gui]
+	recentrepo = <path to repo>
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
